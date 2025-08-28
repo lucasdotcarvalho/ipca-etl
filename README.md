@@ -8,9 +8,13 @@ Este projeto tem como objetivo **capturar os dados do IPCA (Índice Nacional de 
 
 
 ipca_etl/ # Pasta principal do projeto com script e arquivos salvos
+
      data/ # Onde os arquivos Parquet serão salvos
+
 Questão 1 - Arquitetura ELT.txt
+
 Questão 2 - Solução para captura de dados.txt
+
 README.md # Este arquivo
 
 
