@@ -27,7 +27,7 @@ O pipeline segue a lógica:
 1. **Extract (Extração):** Captura dos dados da API do IBGE.
 2. **Load (Carga):** Armazenamento dos dados brutos em formato Parquet na pasta `data/`.
 3. **Transform (Transformação):** Estruturação dos dados em DataFrame, renomeando colunas e tratando datas.
-4. **Analytics (Análise):** (Opcional) Os dados ficam prontos para análise, dashboards ou modelos preditivos.
+
 
 ---
 
