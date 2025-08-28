@@ -1,0 +1,26 @@
+Esse diagrama mostra uma arquitetura de pipeline de dados seguindo o padrão ELT (Extract, Load, Transform) que é uma evolução do ETL tradicional, a ideia é até simples, primeiro a gente extrai e carrega os dados no repositório central, do jeito que eles chegam sem mexer, é depois a transformação acontece só quando realmente precisamos consumir esses dados isso dá muito mais flexibilidade e escalabilidade
+
+O ecossistema do pipeline é dividido em algumas fases
+	Extract (Extração) - Aqui a gente coleta os dados de várias fontes
+	Load (Carga) - Em seguida, os dados vão pro armazenamento central
+	Transform (Transformação) - Depois vem a parte de processar e refinar os dados, deixando eles prontos pra análise
+	Analytics (Análise) - Por fim, usamos os dados transformados pra gerar insights, relatórios e até modelos preditivos
+
+Além dessas fases, existem camadas horizontais que sustentam todo o processo, como a ingestão, governança, monitoramento e dataOps, E tudo muito essencial pra manter tudo funcionando de forma eficiente e segura
+
+Como isso é usado na prática em uma empresa ?
+Um ecossistema de dados desse tipo é de suma importância pra qualquer empresa que queira ser orientada a dados (cultura data driven) e aproveitar ao máximo as informações que possui 
+
+Alguns exemplos de uso
+
+Inteligência de Negócios (BI): Por exemplo, uma empresa de vendas com as bases de dados corretamente tratadas e armazenadas poderia criar relatórios e dashboards interativos sobre vendas, desempenho de produtos, comportamento do cliente etc. Isso ajuda gestores a acompanhar métricas importantes e perceber tendências quase que em tempo real ajudando na tomada de decisão orientada a dados. 
+
+Personalização da Experiência do Cliente: Coletar dados de interações em sites e APIs pra entender preferências e oferecer produtos ou serviços personalizados, aumentando satisfação e retenção.
+
+Otimização de Operações: Analisar dados transacionais pra otimizar processos internos, descobrir gargalos, reduzir custos e melhorar a eficiência.
+
+Desenvolvimento de Novos Produtos ou Serviços: Aplicar Machine Learning nos dados pra prever demandas, identificar oportunidades ou criar funcionalidades inovadoras.
+
+Análise Preditiva e Prescritiva: Prever churn de clientes, falhas em equipamentos ou sugerir ações específicas pra melhorar resultados de campanhas.
+
+Conformidade e Auditoria: Ter um registro centralizado e bem governado de todos os dados facilita auditorias e garante conformidade com regras de privacidade e segurança.

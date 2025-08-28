@@ -1,0 +1,15 @@
+Solução para Captura de Dados com Navegação Automatizada
+
+Se os dados que a gente precisa não estiverem disponíveis por um link direto, e for necessário “clicar” no site, passar por menus, login ou botões etc, aí já não dá pra resolver só com um requests.get, nesses casos o caminho é simular o que um usuário faria manualmente, mas de forma automatizada.
+
+Como resolver isso na prática ?
+Existem algumas formas de fazer essa automação em Python, e as mais usadas hoje são:
+
+	Selenium: esse daqui é o clássico e existe faz tempo, ele literalmente abre um navegador tipo Chrome, Firefox ou Edge e você consegue controlar tudo, clicar em botões, digitar em campos, rolar a página e até esperar os elementos carregarem, o bom é que tem bastante documentação e tutoriais, então não falta material na internet, a parte ruim é que às vezes pode ser um pouco mais “pesado” já que abre o navegador completo mas pra sites que exigem login, cliques, ou que carregam dados via JavaScript,funciona super bem.
+
+	Playwright: é mais moderno, feito pela Microsoft, e funciona de forma parecida com o Selenium, mas costuma ser mais rápido e com uma API um pouco mais amigável ele também suporta múltiplos navegadores e consegue até rodar em modo “headless”, outra vantagem é que ele já vem com várias funções prontas pra esperar o carregamento de elementos, o que facilita a vida, ou seja, dá pra fazer o mesmo que o Selenium, mas em geral com menos dor de cabeça.
+
+	Requests + BeautifulSoup: aqui a ideia já é diferente eles não abrem um navegador, só baixam o HTML da página e permitem que você “parseie” esse HTML, isso é bem útil quando os dados já estão no código-fonte da página, tipo tabelas ou links, e mais leve e rápido do que usar Selenium ou Playwright, mas tem um porém, se o site for muito dinâmico esses dois não dão conta, nesse caso você teria que voltar pro Selenium ou Playwright mesmo.
+
+Resumindo 
+Se eu precisasse pegar os dados “na unha” dentro do site, eu usaria Selenium ou Playwright pra capturar tudo e colocar em um ambiente onde eu tivesse mais controle sobre o fluxo de produção.
